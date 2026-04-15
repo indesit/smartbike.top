@@ -2,6 +2,9 @@
 
 This audit analyzes the current state of **Smartbike.top**, a bicycle rental service based in Prague, to provide a roadmap for a modern, high-performance prototype.
 
+Origin site actual structure: smirtbike.top_OLD_SITE.html
+General data: smartbike.top_.2026-04-15T18_57_33.089Z.json
+
 ## 1. Executive Summary
 The current website is a WordPress-based site using a pre-designed Elementor template ("AI Matrix"). The primary issue is a **massive content mismatch**: while the service is about electric bike rentals, a significant portion of the site contains placeholder text related to AI, Machine Learning, and Robotics. This leads to a confusing user experience, poor brand trust, and non-existent SEO for the actual business niche.
 

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f2f5ef;
+  --foreground: #102217;
+  --card: rgba(255, 255, 255, 0.78);
+  --muted: #dfe8da;
+  --muted-foreground: #5b6b61;
+  --accent: #4a8b52;
+  --accent-strong: #366b3d;
+  --accent-foreground: #f7fbf6;
+  --border: rgba(16, 34, 23, 0.1);
+  --ring: #73a97a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(132, 187, 140, 0.24), transparent 28%),
+    radial-gradient(circle at top right, rgba(194, 221, 196, 0.28), transparent 22%),
+    linear-gradient(180deg, #f8fbf7 0%, var(--background) 100%);
+  color: var(--foreground);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(74, 139, 82, 0.18);
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-sora);
+}
+
+@utility container-shell {
+  margin-inline: auto;
+  width: min(100% - 1.5rem, 76rem);
+}
+
+@utility section-gap {
+  padding-block: clamp(4rem, 10vw, 7rem);
+}
+
+@utility soft-grid {
+  background-image:
+    linear-gradient(to right, rgba(16, 34, 23, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 34, 23, 0.045) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+}
